@@ -1,9 +1,10 @@
 import React from 'react'
 import { Layout } from 'antd';
 import NavLeft from './components/NavLeft';
+import Header from './components/Header';
 import  './style/common.less';
 const {
-  Header, Content, Footer
+  Content, Footer
 } = Layout;
 export default class Admin extends React.Component{
 
@@ -13,7 +14,7 @@ export default class Admin extends React.Component{
             <NavLeft/>
             
             <Layout style={{ marginLeft: 200 }}>
-              <Header style={{ background: '#fff', padding: 0 }} />
+              <Header/>
               <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
                 <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
                   ...
