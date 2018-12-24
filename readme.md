@@ -127,5 +127,9 @@ module.exports = function override(config, env) {
 
 
 3. 菜单组件开发
+菜单组件NavLeft报错，引用的组件不是`export class`时，原因是`const {SubMenu} = Menu.SubMenu`,修改为`const SubMenu = Menu.SubMenu`
+
+
+![image](https://github.com/czmax/react-learning/blob/master/images/SubMenu%E6%8A%A5%E9%94%99.png)
 4. 头部组件开发
 5. 底部组件开发
