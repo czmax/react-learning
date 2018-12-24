@@ -36,7 +36,7 @@ yarn add less@^2.7.3  babel-plugin-import jsonp --dev
 - componentDidUpdate：组件要更新之后。
 - componentWillUnmount：组件要更新之后。
 
-![image](front-end\14-react\03-antd-learning\images\react生命周期.jpg)
+![image](https://github.com/czmax/react-learning/blob/master/images/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.jpg)
 
 this传递的
 ```
