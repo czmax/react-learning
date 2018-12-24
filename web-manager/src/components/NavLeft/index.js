@@ -11,8 +11,21 @@ export default class NavLeft extends React.Component {
     state = {
         mode: 'inline',
         theme: 'light',
+        openKeys: ['sub1']
       }
-  
+      rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
+
+      onOpenChange = (openKeys) => {
+          //TODO key没有获取到
+        const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
+        if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
+          this.setState({ openKeys });
+        } else {
+          this.setState({
+            openKeys: latestOpenKey ? [latestOpenKey] : [],
+          });
+        }
+      }
     componentWillMount(){
         
         const menuTreeNode = this.renderMenu(MenuConfig);
@@ -29,9 +42,9 @@ export default class NavLeft extends React.Component {
             if(item.children){
                 return (
                     <SubMenu title={<span><Icon type="mail" /><span>{item.title}</span></span>} key={item.key}>
-                        <MenuItemGroup key="g1" title={item.title}>
+                       
                             { this.renderMenu(item.children)}
-                        </MenuItemGroup>
+                       
                     </SubMenu>
                 )
             }
@@ -51,9 +64,12 @@ export default class NavLeft extends React.Component {
                 <Menu  
                     defaultSelectedKeys={['1']}
                     defaultOpenKeys={['sub1']}
-
+                    openKeys={this.state.openKeys}
+                    onOpenChange={this.onOpenChange}
                     mode={this.state.mode}
-                    theme={this.state.theme}>
+                    theme={this.state.theme}
+                    >
+
                     {this.state.menuTreeNode}
                     {/* <Menu.Item title="123123" key="123123">
                     123123
