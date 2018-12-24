@@ -10,7 +10,7 @@ export default class Admin extends React.Component{
     render(){
         return (
             <Layout>
-            <NavLeft />
+            <NavLeft/>
             
             <Layout style={{ marginLeft: 200 }}>
               <Header style={{ background: '#fff', padding: 0 }} />

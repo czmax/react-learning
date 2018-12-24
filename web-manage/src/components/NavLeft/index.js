@@ -4,13 +4,12 @@ import MenuConfig from '../../config/menuConfig'
 import './index.less'
 
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 const { Sider } = Layout;
 
 export default class NavLeft extends React.Component {
     state = {
         mode: 'inline',
-        theme: 'light',
+        theme: 'dark',
         openKeys: ['sub1']
       }
       rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
@@ -35,28 +34,28 @@ export default class NavLeft extends React.Component {
         })
     }
 
-       // 菜单渲染
-       renderMenu =(data)=>{
-       
-        return data.map((item)=>{
-            if(item.children){
-                return (
-                    <SubMenu title={<span><Icon type="mail" /><span>{item.title}</span></span>} key={item.key}>
-                       
-                            { this.renderMenu(item.children)}
-                       
-                    </SubMenu>
-                )
-            }
-            return <Menu.Item title={item.title} key={item.key}>
-                {item.title}
-            </Menu.Item>
-        })
-    }
+   // 菜单渲染
+renderMenu =(data)=>{
+   
+    return data.map((item)=>{
+        if(item.children){
+            return (
+                <SubMenu title={<span><Icon type="mail" /><span>{item.title}</span></span>} key={item.key}>
+                   
+                        { this.renderMenu(item.children)}
+                   
+                </SubMenu>
+            )
+        }
+        return <Menu.Item title={item.title} key={item.key}>
+            {item.title}
+        </Menu.Item>
+    })
+}
 
     render() {
         return (
-            <Sider style={{overflow: 'auto', height: '100vh', position: 'fixed',left: 0}}>
+            <Sider>
                 <div className="logo">
                     <img src="/assets/logo-ant.svg" alt=""/>
                     <h1>TODO MS</h1>
