@@ -1,8 +1,9 @@
 import React from 'react'
-import{Row,Col,Divider } from 'antd'
+import{Row,Col } from 'antd'
 import './index.less'
 import Util from '../../utils/utils'
 import axios from '../../axios'
+
 export default class Header extends React.Component {
     state = {
         userName:'zdys'
@@ -43,7 +44,8 @@ export default class Header extends React.Component {
 
                     </Col>
 
-                </Row><Divider />
+                </Row>
+                {/* <Divider /> */}
                 <Row  className="breadcrumb">
                     <Col span="4"  className="breadcrumb-title">
                         首页
