@@ -49,7 +49,6 @@ export default class Buttons extends React.Component {
                     <Button.Group>
                         <Button type="primary"><Icon type="left"/>前进</Button>
                         <Button type="primary">返回<Icon type="right"/></Button>
-
                     </Button.Group>
                 </Card>
                 <Card title="按钮尺寸" className="card-wrap">
@@ -58,10 +57,10 @@ export default class Buttons extends React.Component {
                         <Radio value="default">中</Radio>
                         <Radio value="large">大</Radio>
                     </Radio.Group>
-                    <Buttons type="primary" size={this.state.size}>IMooc</Buttons>
-                    <Buttons type="dashed" size={this.state.size}>IMooc</Buttons>
-                    <Buttons type="danger" size={this.state.size}>IMooc</Buttons>
-                    <Buttons size={this.state.size}></Buttons>
+                    <Button type="primary" size={this.state.size}>IMooc</Button>
+                    <Button type="dashed" size={this.state.size}>IMooc</Button>
+                    <Button type="danger" size={this.state.size}>IMooc</Button>
+                    <Button size={this.state.size}></Button>
                 </Card>
             </div>
         );
