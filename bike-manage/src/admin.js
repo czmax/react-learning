@@ -13,6 +13,7 @@ export default class Admin extends React.Component {
             <Layout>
                 <NavLeft/>
                 <Layout style={{marginLeft: 200,overflow:'auto'}}>
+                    {/*overflow:'auto' 可以控制右边右面自动添加滚动*/}
                     <Header/>
                     <Content style={{margin: '24px 16px 0', overflow: 'initial'}}>
                         {/*<Home></Home>*/}
