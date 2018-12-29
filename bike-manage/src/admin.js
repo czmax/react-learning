@@ -2,7 +2,7 @@ import React from 'react'
 import {Layout} from 'antd';
 import NavLeft from './components/NavLeft';
 import Header from './components/Header';
-import Home from './pages/home';
+//import Home from './pages/home';
 import './style/common.less';
 
 const {Footer, Content} = Layout;
@@ -12,7 +12,7 @@ export default class Admin extends React.Component {
         return (
             <Layout>
                 <NavLeft/>
-                <Layout style={{marginLeft: 200}}>
+                <Layout style={{marginLeft: 200,overflow:'auto'}}>
                     <Header/>
                     <Content style={{margin: '24px 16px 0', overflow: 'initial'}}>
                         {/*<Home></Home>*/}
