@@ -49,7 +49,7 @@ export default class Modals extends React.Component {
         return (
             <div>
                 <Card title="基础模态框" className="card-wrap">
-                    {/*传参需要用箭头函数在前，这样点击时才调用*/}
+                    {/*传参需要用箭头函数在前，这样点击时才调用,{ this.handleOpen('showModal1')}是立马执行函数*/}
                     <Button type="primary" onClick={() => this.handleOpen('showModal1')}>Open</Button>
                     <Button type="primary" onClick={() => this.handleOpen('showModal2')}>自定义页脚</Button>
                     <Button type="primary" onClick={() => this.handleOpen('showModal3')}>顶部20px弹窗</Button>

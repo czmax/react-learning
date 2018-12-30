@@ -6,6 +6,7 @@ import Admin from './admin';
 import Buttons from './pages/antd_ui/buttons';
 import Modals from './pages/antd_ui/modals';
 import Loadings from './pages/antd_ui/loadings';
+import Notices from './pages/antd_ui/notices';
 import NoMatch from "./pages/nomatch";
 
 export default class IRouter extends React.Component {
@@ -20,6 +21,7 @@ export default class IRouter extends React.Component {
                             <Route path="/admin/ui/buttons" component={Buttons}/>
                             <Route path="/admin/ui/modals" component={Modals}/>
                             <Route path="/admin/ui/loadings" component={Loadings}/>
+                            <Route path="/admin/ui/notification" component={Notices}/>
                             <Route  component={NoMatch}/></Switch>
 
                         </Admin>
