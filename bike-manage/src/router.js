@@ -12,6 +12,7 @@ import Tabs from './pages/antd_ui/tabs';
 import Gallery from './pages/antd_ui/gallery';
 import Carousels from './pages/antd_ui/carousels';
 import FormLogin from './pages/antd_form/login';
+import FromRegister from './pages/antd_form/register';
 import NoMatch from "./pages/nomatch";
 
 export default class IRouter extends React.Component {
@@ -32,6 +33,7 @@ export default class IRouter extends React.Component {
                             <Route path="/admin/ui/gallery" component={Gallery}/>
                             <Route path="/admin/ui/carousel" component={Carousels}/>
                             <Route path="/admin/form/login" component={FormLogin}/>
+                            <Route path="/admin/form/reg" component={FromRegister}/>
                             <Route  component={NoMatch}/></Switch>
 
                         </Admin>

@@ -40,7 +40,7 @@ export default class NavLeft extends React.Component {
         return data.map((item) => {
             if (item.children) {
                 return (
-                    <SubMenu title={<span><Icon type="mail"/><span>{item.title}</span></span>} key={item.key}>
+                    <SubMenu title={<span><Icon type="ant-design" /><span>{item.title}</span></span>} key={item.key}>
                         {this.renderMenu(item.children)}
                     </SubMenu>
                 )
