@@ -9,6 +9,7 @@ import Loadings from './pages/antd_ui/loadings';
 import Notices from './pages/antd_ui/notices';
 import Messages from './pages/antd_ui/messages';
 import Tabs from './pages/antd_ui/tabs';
+import Gallery from './pages/antd_ui/gallery';
 import NoMatch from "./pages/nomatch";
 
 export default class IRouter extends React.Component {
@@ -26,6 +27,7 @@ export default class IRouter extends React.Component {
                             <Route path="/admin/ui/notification" component={Notices}/>
                             <Route path="/admin/ui/messages" component={Messages}/>
                             <Route path="/admin/ui/tabs" component={Tabs}/>
+                            <Route path="/admin/ui/gallery" component={Gallery}/>
                             <Route  component={NoMatch}/></Switch>
 
                         </Admin>
