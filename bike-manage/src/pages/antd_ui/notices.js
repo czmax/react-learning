@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, Button, notification, Spin} from 'antd';
+import {Card, Button, notification} from 'antd';
 import './ui.less'
 
 export default class Notices extends React.Component {
