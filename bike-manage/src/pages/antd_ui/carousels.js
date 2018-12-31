@@ -1,5 +1,5 @@
 import React from 'react'
-import {Carousel, Card, Icon, Radio, Spin} from 'antd';
+import {Carousel, Card} from 'antd';
 import './ui.less'
 
 export default class Carousels extends React.Component {
@@ -18,9 +18,9 @@ export default class Carousels extends React.Component {
 
                 <Card title="Carousels垂直图片轮播图用法" className="slide-wrap">
                     <Carousel autoplay effect="scrollx" vertical >
-                        <div><img src="/carousel-img/carousel-1.jpg"/></div>
-                        <div><img src="/carousel-img/carousel-2.jpg"/></div>
-                        <div><img src="/carousel-img/carousel-3.jpg"/></div>
+                        <div><img src="/carousel-img/carousel-1.jpg" alt=""/></div>
+                        <div><img src="/carousel-img/carousel-2.jpg" alt=""/></div>
+                        <div><img src="/carousel-img/carousel-3.jpg" alt=""/></div>
 
                     </Carousel>,
 
