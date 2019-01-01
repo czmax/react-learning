@@ -14,6 +14,7 @@ import Carousels from './pages/antd_ui/carousels';
 import FormLogin from './pages/antd_form/login';
 import FromRegister from './pages/antd_form/register';
 import BasicTable from './pages/antd/table/01basicTable';
+import City from './pages/bike/city';
 import NoMatch from "./pages/nomatch";
 
 export default class IRouter extends React.Component {
@@ -36,6 +37,7 @@ export default class IRouter extends React.Component {
                                 <Route path="/admin/form/login" component={FormLogin}/>
                                 <Route path="/admin/form/reg" component={FromRegister}/>
                                 <Route path="/admin/table/basic" component={BasicTable}/>
+                                <Route path="/admin/city" component={City}/>
                                 <Route component={NoMatch}/></Switch>
 
                         </Admin>

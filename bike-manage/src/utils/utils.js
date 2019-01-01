@@ -32,5 +32,20 @@ export default {
             sc = '晚上';
         }
         return "当前时间：" + date + " " + getWeek + " " + "   " + time;
+    },
+    pagination(data, callback) {
+        return {
+            onChange: (current) => {
+                callback(current)
+            },
+            current: data.result.page,
+            pageSize: data.result.page_size,
+            total: data.result.total_count,
+            showTotal: () => {
+                return `共${data.result.total_count}条`
+            },
+            showQuickJumper: true
+        }
     }
+
 }

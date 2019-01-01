@@ -144,3 +144,15 @@ https://www.easy-mock.com/project/5c2af4278b1b183c2bda4f09
 
 ## axios插件封装
 
+loading 页面
+
+## city
+
+map的用法
+```js
+ render(arr) {
+                    return arr.map((item) => {
+                        return item.user_name;
+                    }).join(',');
+                }
+```
