@@ -13,6 +13,7 @@ import Gallery from './pages/antd_ui/gallery';
 import Carousels from './pages/antd_ui/carousels';
 import FormLogin from './pages/antd_form/login';
 import FromRegister from './pages/antd_form/register';
+import BasicTable from './pages/antd/table/01basicTable';
 import NoMatch from "./pages/nomatch";
 
 export default class IRouter extends React.Component {
@@ -21,20 +22,21 @@ export default class IRouter extends React.Component {
             <HashRouter>
                 <App>
                     <Route path="/login" component={Login}/>
-                    <Route path="/admin" render={()=>
+                    <Route path="/admin" render={() =>
                         <Admin>
                             <Switch>
-                            <Route path="/admin/ui/buttons" component={Buttons}/>
-                            <Route path="/admin/ui/modals" component={Modals}/>
-                            <Route path="/admin/ui/loadings" component={Loadings}/>
-                            <Route path="/admin/ui/notification" component={Notices}/>
-                            <Route path="/admin/ui/messages" component={Messages}/>
-                            <Route path="/admin/ui/tabs" component={Tabs}/>
-                            <Route path="/admin/ui/gallery" component={Gallery}/>
-                            <Route path="/admin/ui/carousel" component={Carousels}/>
-                            <Route path="/admin/form/login" component={FormLogin}/>
-                            <Route path="/admin/form/reg" component={FromRegister}/>
-                            <Route  component={NoMatch}/></Switch>
+                                <Route path="/admin/ui/buttons" component={Buttons}/>
+                                <Route path="/admin/ui/modals" component={Modals}/>
+                                <Route path="/admin/ui/loadings" component={Loadings}/>
+                                <Route path="/admin/ui/notification" component={Notices}/>
+                                <Route path="/admin/ui/messages" component={Messages}/>
+                                <Route path="/admin/ui/tabs" component={Tabs}/>
+                                <Route path="/admin/ui/gallery" component={Gallery}/>
+                                <Route path="/admin/ui/carousel" component={Carousels}/>
+                                <Route path="/admin/form/login" component={FormLogin}/>
+                                <Route path="/admin/form/reg" component={FromRegister}/>
+                                <Route path="/admin/table/basic" component={BasicTable}/>
+                                <Route component={NoMatch}/></Switch>
 
                         </Admin>
                     }/>

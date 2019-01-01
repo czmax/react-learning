@@ -134,3 +134,13 @@ module.exports = function override(config, env) {
 
 4. 头部组件开发
 5. 底部组件开发
+
+
+
+## easy-mock
+
+https://www.easy-mock.com/project/5c2af4278b1b183c2bda4f09
+
+
+## axios插件封装
+
